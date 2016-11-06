@@ -31,11 +31,17 @@ ParameterBag.prototype.set = function(key, data) {
 /**
  * @public
  * @param {string} key
+ * @param {mixed}  defaultValue If no value exist for the key defaultValue will be returned
  *
  * @returns {mixed}
  */
-ParameterBag.prototype.get = function (key) {
-    return this.store[key];
+ParameterBag.prototype.get = function (key, defaultValue) {
+    var value = this.store[key];
+    if ('undefined' == typeof(value)) {
+        return defaultValue;
+    }
+
+    return value;
 };
 
 /**
