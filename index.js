@@ -31,7 +31,7 @@ ParameterBag.prototype.set = function(key, data) {
 /**
  * @public
  * @param {string} key
- * @param {mixed}  defaultValue If no value exist for the key defaultValue will be returned
+ * @param {mixed}  defaultValue If value is undefined for the key, defaultValue will be returned
  *
  * @returns {mixed}
  */
