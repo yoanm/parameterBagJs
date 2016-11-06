@@ -7,7 +7,7 @@
  * var bag = new ParameterBag();
  *
  * @example <caption>Setter</caption>
- *  bag.set('key', value);
+ *  bag.set('key', 'value');
  *
  * @example <caption>Getter</caption
  *  var myValue = bag.get('key');
