@@ -1,0 +1,12 @@
+checks:
+    javascript: true
+filter:
+    excluded_paths:
+        - test/*
+build:
+    environment:
+             node: '4.2.2'
+    tests:
+        override:
+            - npm test
+            - jshint-run
