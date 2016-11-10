@@ -1,4 +1,4 @@
-/*****************************************************************************************************************
+/* ****************************************************************************************************************
  * @summary Simple parameter bag module, inspired by Symfony ParameterBag
  * @description ParameterBag provide Object oriented way to store key value pair
  *
@@ -17,7 +17,7 @@
  * @constructor
  */
 function ParameterBag() {
-    this.store = new Array();
+    this.store = [];
 }
 
 /**
@@ -35,9 +35,9 @@ ParameterBag.prototype.set = function(key, data) {
  *
  * @returns {mixed}
  */
-ParameterBag.prototype.get = function (key, defaultValue) {
+ParameterBag.prototype.get = function(key, defaultValue) {
     var value = this.store[key];
-    if ('undefined' == typeof(value)) {
+    if (typeof value === 'undefined') {
         return defaultValue;
     }
 

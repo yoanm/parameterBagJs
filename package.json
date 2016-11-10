@@ -4,7 +4,8 @@
   "description": "Parameter bag for javascript",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec"
+    "test": "./node_modules/.bin/mocha --reporter spec",
+    "eslint": "./node_modules/.bin/eslint -c .eslintrc index.js"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,8 @@
   "homepage": "https://github.com/yoanm/parameterBagJs",
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^3.1.2"
+    "mocha": "^3.1.2",
+    "eslint": "^2.9.0",
+    "eslint-config-google": "^0.5.0"
   }
 }
