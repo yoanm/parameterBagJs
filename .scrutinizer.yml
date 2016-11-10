@@ -4,9 +4,17 @@ filter:
     excluded_paths:
         - test/*
 build:
+    dependencies:
+        before:
+            - npm install istanbul
     environment:
              node: '4.2.2'
     tests:
         override:
             - npm test
             - eslint-run --config .eslintrc index.js
+            -
+                command: 'istanbul cover --report clover test.js'
+                coverage:
+                    file: 'coverage/clover.xml'
+                    format: 'clover'
