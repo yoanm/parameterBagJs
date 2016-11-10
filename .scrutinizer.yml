@@ -9,4 +9,4 @@ build:
     tests:
         override:
             - npm test
-            - jshint-run
+            - eslint-run --config .eslintrc index.js
