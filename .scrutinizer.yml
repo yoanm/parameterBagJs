@@ -10,3 +10,8 @@ build:
         override:
             - npm test
             - eslint-run --config .eslintrc index.js
+            -
+                command: 'npm run coverage-clover'
+                coverage:
+                    file: 'coverage/clover.xml'
+                    format: 'clover'
