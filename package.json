@@ -6,7 +6,8 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter spec",
     "eslint": "./node_modules/.bin/eslint -c .eslintrc index.js",
-    "coverage-clover": "./node_modules/.bin/babel-node ./node_modules/istanbul/lib/cli cover node_modules/mocha/bin/_mocha --report clover"
+    "coverage-clover": "./node_modules/.bin/babel-node ./node_modules/istanbul/lib/cli cover node_modules/mocha/bin/_mocha --report clover",
+    "coverage": "./node_modules/.bin/babel-node ./node_modules/istanbul/lib/cli cover node_modules/mocha/bin/_mocha --report html"
   },
   "repository": {
     "type": "git",
