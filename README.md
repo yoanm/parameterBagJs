@@ -22,9 +22,21 @@ bag.set('key', 'value');
 // Get
 var myValue = bag.get('key');
 ```
+
 ## Tests
 ```bash
 > npm test
+```
+
+## Coverage
+```bash
+> npm run coverage
+```
+Then open the `coverage/index.js.html` file in a browser
+
+## EsLint
+```bash
+> npm run eslint
 ```
 
 ## Release History
