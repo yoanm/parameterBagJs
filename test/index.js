@@ -1,3 +1,4 @@
+/* globals describe, it */
 const ParameterBag = require('../index');
 const expect = require('chai').expect;
 

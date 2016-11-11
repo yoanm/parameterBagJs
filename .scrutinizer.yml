@@ -14,7 +14,7 @@ build:
             - npm test
             - eslint-run --config .eslintrc index.js
             -
-                command: 'istanbul cover --report clover test.js'
+                command: 'npm run coverage-clover'
                 coverage:
                     file: 'coverage/clover.xml'
                     format: 'clover'
