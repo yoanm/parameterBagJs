@@ -24,7 +24,7 @@ describe('ParameterBag', function() {
         var testValue = 'test';
         var defaultValue = 'my default value';
         bag.set('_test_', testValue);
-        expect(bag.get(testKey)).to.be.undefined;
+        expect(bag.get(testKey)).to.equal(undefined);
         expect(bag.get(testKey, defaultValue)).to.equal(defaultValue);
     });
 
