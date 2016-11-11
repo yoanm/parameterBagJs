@@ -4,9 +4,6 @@ filter:
     excluded_paths:
         - test/*
 build:
-    dependencies:
-        before:
-            - npm install istanbul
     environment:
              node: '4.2.2'
     tests:
