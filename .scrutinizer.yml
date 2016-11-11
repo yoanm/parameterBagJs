@@ -9,7 +9,7 @@ build:
     tests:
         override:
             - npm test
-            - npm run eslting
+            - npm run eslint
             -
                 command: 'npm run coverage-clover'
                 coverage:
