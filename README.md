@@ -48,3 +48,4 @@ Then open the `coverage/index.js.html` file in a browser
 
 * `1.0.0` : Initial release
 * `1.1.0` : EsLint / Coverage / Scrutinizer badge
+* `1.2.0` : Badge, badge and badge
